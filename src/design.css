@@ -1,0 +1,40 @@
+.hidden {
+  visibility: hidden;
+}
+
+.submittedHeader {
+  position: absolute;
+  z-index: 5;
+  top: 1.5vh;
+  left: 1.5vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 3vw;
+  width: 50%;
+  text-align: left !important;
+  background-color: #ff0000;
+  border-top-right-radius: 25px;
+}
+
+.draftHeader {
+  position: absolute;
+  z-index: 5;
+  top: 1.5vh;
+  left: 1.5vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 3vw;
+  width: 50%;
+  text-align: left !important;
+  background-color: #f6f6f6;
+  color: #000;
+  border-top-right-radius: 25px;
+  border: 1px solid #000;
+}
+
+@media (max-width: 767px) {
+  .submittedHeader {
+    width: 70%;
+    top: 2.5vh;
+  }
+}

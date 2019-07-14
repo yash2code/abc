@@ -1,0 +1,67 @@
+.animation {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d6d6d6;
+  animation: fade 1s forwards;
+  overflow: hidden;
+}
+
+.overlay {
+  z-index: 2;
+  background-image: radial-gradient(#000000, #252525, transparent);
+  background-size: cover;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  position: absolute !important;
+  top: 0;
+  right: 0 !important;
+  overflow: hidden;
+}
+
+.buttonStart {
+  /* position: absolute !important; */
+  /* top: 80vh; */
+  /* margin: 0; */
+  /* left: 42vw; */
+  text-align: center;
+  color: #ffffff !important;
+  background-color: #ff0000 !important;
+  z-index: 12 !important;
+  animation: fade 1s forwards;
+  margin-top: 20px !important;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    z-index: 11;
+  }
+  100% {
+    opacity: 0;
+    z-index: -4;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
